@@ -3117,6 +3117,7 @@ class ilObjTest extends ilObject
         string $importdir,
         array $mappings
     ): SettingsIntroduction {
+        $text = $material['text'] ?? '';
         if (!str_starts_with($text, '<PageObject>')) {
             return $settings;
         }
@@ -3142,6 +3143,7 @@ class ilObjTest extends ilObject
         string $importdir,
         array $mappings
     ): SettingsFinishing {
+        $text = $material['text'] ?? '';
         if (!str_starts_with($text, '<PageObject>')) {
             return $settings;
         }
